@@ -53,6 +53,7 @@
         android:text="Mpesa"
         app:layout_constraintBaseline_toBaselineOf="@+id/mbtCall"
         app:layout_constraintEnd_toStartOf="@+id/mbtemail"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button

@@ -32,12 +32,12 @@ class MainActivity : AppCompatActivity() {
         btnSms.setOnClickListener {
             val uri = Uri.parse("smsto:0708477938")
             val intent = Intent(Intent.ACTION_SENDTO, uri)
-            intent.putExtra("sms_body", "Hello, i'am Alphonce")
+            intent.putExtra("sms_body", "Hello, i'am Alphonce I need a nice web which is complete with STK push")
             startActivity(intent)
 
         }
         btnEmail.setOnClickListener {
-            val emailIntent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "king10@gmail.com", null))
+            val emailIntent = Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "ralkid71@gmail.com", null))
             emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject")
             emailIntent.putExtra(Intent.EXTRA_TEXT, "Dear sir.....")
             startActivity(Intent.createChooser(emailIntent, "Send email..."))
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
             simToolKitLaunchIntent?.let { startActivity(it) }
         }
         btnCall.setOnClickListener {
-            val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "+918511812660"))
+            val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + "0756188770"))
             if (ContextCompat.checkSelfPermission(this@MainActivity, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this@MainActivity, arrayOf<String>(Manifest.permission.CALL_PHONE), 1)
             } else {
